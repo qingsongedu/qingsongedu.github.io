@@ -1,0 +1,157 @@
+<!-- Profile Header -->
+<div class="row mb-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white" style="border-radius: 8px; overflow: hidden;">
+            <div class="card-body" style="padding: 2rem 2.5rem;">
+                <div class="row align-items-start">
+                    <div class="col-auto">
+                        {% if site.data.profile.portrait_url %}
+                        <figure class="figure mb-0">
+                            <img 
+                                src="{{ site.data.profile.portrait_url | relative_url }}" 
+                                class="figure-img img-fluid profile-portrait" 
+                                data-toggle="tooltip" 
+                                data-placement="top" 
+                                title="{{ site.data.profile.portrait_caption }}"
+                            >
+                        </figure>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        <div class="h2 mb-3" style="font-weight: 600; color: #212529; line-height: 1.3;">
+                            {{ site.data.profile.primary_name }} <small class="text-muted" style="font-size: 0.7em;">{{ site.data.profile.secondary_name }}</small>
+                        </div>
+                        <div class="text-profile-position p-3 rounded" style="background-color: #f8f9fa; border-radius: 6px;">
+                            <!-- Position Information -->
+                            {% for position in site.data.profile.positions %}
+                            <div class="position-item mb-2">
+                                {% assign parts = position.name | split: '|' %}
+                                {% for part in parts %}
+                                <div class="position-line">{{ part | strip }}</div>
+                                {% endfor %}
+                            </div>
+                            {% endfor %}
+                            
+                            <!-- Social Links Integrated -->
+                            <div class="mt-3">
+                                <div class="social-links-grid">
+                                    <a class="social-link-item email-link" href="mailto:{{ site.data.profile.email | encode_email }}">
+                                        <i class="fas fa-envelope"></i>
+                                        <span class="social-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
+                                    </a>
+
+                                    {% if site.data.profile.gscholar %}
+                                    <a class="social-link-item gscholar-link" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en">
+                                        <i class="fab fa-google-scholar"></i>
+                                        <span class="social-text">Google Scholar</span>
+                                    </a>
+                                    {% endif %}
+                                    
+                                    {% if site.data.profile.sscholar %}
+                                    <a class="social-link-item sscholar-link" target="_blank" href="https://www.semanticscholar.org/author/{{ site.data.profile.sscholar }}">
+                                        <i class="fas fa-book-open"></i>
+                                        <span class="social-text">Semantic Scholar</span>
+                                    </a>
+                                    {% endif %}
+                                    
+                                    {% if site.data.profile.researchgate %}
+                                    <a class="social-link-item researchgate-link" target="_blank" href="https://www.researchgate.net/profile/{{ site.data.profile.researchgate }}">
+                                        <i class="fab fa-researchgate"></i>
+                                        <span class="social-text">ResearchGate</span>
+                                    </a>
+                                    {% endif %}
+                                    
+                                    {% if site.data.profile.dblp %}
+                                    <a class="social-link-item dblp-link" target="_blank" href="https://dblp.org/pid/{{ site.data.profile.dblp }}">
+                                        <i class="fas fa-database"></i>
+                                        <span class="social-text">DBLP</span>
+                                    </a>
+                                    {% endif %}
+                                    
+                                    {% if site.data.profile.github %}
+                                    <a class="social-link-item github-link" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                                        <i class="fab fa-github"></i>
+                                        <span class="social-text">GitHub</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.wechat_qrcode %}
+                                    <a class="social-link-item wechat-link" data-toggle="modal" data-target="#modal-wechat">
+                                        <i class="fab fa-weixin"></i>
+                                        <span class="social-text">WeChat</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.twitter %}
+                                    <a class="social-link-item twitter-link" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                                        <i class="fab fa-twitter"></i>
+                                        <span class="social-text">Twitter</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.linkedin %}
+                                    <a class="social-link-item linkedin-link" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                                        <i class="fab fa-linkedin"></i>
+                                        <span class="social-text">LinkedIn</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.orcid %}
+                                    <a class="social-link-item orcid-link" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                                        <i class="fab fa-orcid"></i>
+                                        <span class="social-text">ORCID</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.csdn %}
+                                    <a class="social-link-item csdn-link" target="_blank" href="https://blog.csdn.net/{{ site.data.profile.csdn }}">
+                                        <i class="fas fa-blog"></i>
+                                        <span class="social-text">CSDN</span>
+                                    </a>
+                                    {% endif %}
+
+                                    {% if site.data.profile.zhihu %}
+                                    <a class="social-link-item zhihu-link" target="_blank" href="https://www.zhihu.com/people/{{ site.data.profile.zhihu }}">
+                                        <i class="fas fa-question-circle"></i>
+                                        <span class="social-text">Zhihu</span>
+                                    </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-profile-bio mb-0 mt-4" style="line-height: 1.75; font-size: 0.95rem; color: #212529;">
+                    {{ site.data.profile.short_bio }}
+                </div>
+
+                {% if site.data.profile.cv_link %}
+                    <a target="_blank" href="{{ site.data.profile.cv_link }}" class="btn btn-outline-primary btn-sm mb-4">
+                        <i class="fas fa-file-alt"></i> Curriculum Vitae
+                    </a>
+                {% endif %}
+            </div>        
+        </div>
+    </div>
+</div>
+
+{% if site.data.profile.wechat_qrcode %}
+<div class="modal fade" id="modal-wechat" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <img src="{{ site.data.profile.wechat_qrcode }}" class="img-fluid">
+            </div>
+            {% if site.data.profile.wechat_prompt %}
+            <div class="modal-body p-1">
+                {{ site.data.profile.wechat_prompt }}
+            </div>
+            {% endif %}
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}

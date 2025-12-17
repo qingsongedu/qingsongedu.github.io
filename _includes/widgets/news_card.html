@@ -1,0 +1,16 @@
+<div class="my-3 bg-white shadow-sm rounded-sm">
+    <h6 class="p-3 mb-0 border-bottom" style="font-weight: 600; font-size: 1.1rem; color: #212529;"><i class="fas fa-rss mr-2" style="color: #6c757d;"></i>News</h6>
+    <div class="px-3 py-3">
+        <div style="font-size: 15px; line-height: 1.7;">
+            {% for item in site.data.news %}
+            <div class="mb-2 news-item" style="padding: 0.25rem 0.5rem; border-left: 2px solid transparent; transition: all 0.2s ease;">
+                {% assign date_str = item.date | date: "%Y-%m-%d" %}
+                {% if date_str != "2099-12-31" %}
+                <span style="color: #6c757d; font-weight: 500; margin-right: 0.5rem;">[{{ item.date | date: "%m/%Y" }}]</span>
+                {% endif %}
+                <span style="color: #212529;">{{ item.content }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

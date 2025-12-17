@@ -1,0 +1,9 @@
+homepage:
+  show_experience: false
+  show_news: true
+  show_selected_publications: false
+
+# Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
+# if you keep the link to the template so that more people can benefit from it. Thanks!
+footer_text: >-
+  Copyright © 2025 <a href="https://sites.google.com/site/qingsongwen8/" target="_blank">Qingsong Wen</a>. All Rights Reserved.

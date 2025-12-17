@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AI for Time Series - Qingsong Wen</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body class="bg-light" >
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm" style="background-color: #ffffff !important; border-bottom: 1px solid #e9ecef;">
+    <div class="container">
+        <a class="navbar-brand" style="font-weight: 600; font-size: 1.1rem; color: #212529 !important;">Qingsong Wen's Homepage</a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em; border: none;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/publications">Publications</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/keynote-tutorial">Keynote & Tutorial</a>
+                </li>
+                
+                <li class="nav-item active">
+                    <a class="nav-link" href="/ai-for-time-series">AI for Time Series</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/ai-for-education">AI for Education</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/llm-ai-agent">LLM & AI Agent</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/experience">Experience</a>
+                </li>
+                
+                <li class="nav-item ">
+                    <a class="nav-link" href="/service">Services & Awards</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div class="row">
+    <div class="col-12 col-lg-10">        
+        <div class="mt-3">
+            <h3>World-class R&D on AI for Time Series (AI4TS) Analysis & Applications</h3>
+            <ul>
+                <li>Top AI Papers: published (<strong style="color: red;">NeurIPS</strong>, <strong style="color: red;">ICML</strong>, <strong style="color: red;">ICLR</strong>) x23, (<strong style="color: #4a86e8;">KDD</strong>, <strong style="color: #4a86e8;">WWW</strong>, <strong style="color: #4a86e8;">ACL</strong>) x17, (<strong style="color: #4a86e8;">AAAI</strong>, <strong style="color: #4a86e8;">IJCAI</strong>) x12, (<strong style="color: #4a86e8;">SIGMOD</strong>, <strong style="color: #4a86e8;">VLDB</strong>, <strong style="color: #4a86e8;">ICDE</strong>) x7, (<strong style="color: #4a86e8;">IEEE Trans</strong>) x15, etc.</li>
+                <li>Workshops & Tutorials: organized 20+ events @ <strong style="color: #4a86e8;">KDD</strong>, <strong style="color: #4a86e8;">AAAI</strong>, <strong style="color: #4a86e8;">IJCAI</strong>, <strong style="color: #4a86e8;">WWW</strong>, <strong style="color: #4a86e8;">ICDM</strong>, <strong style="color: #4a86e8;">SDM</strong>, <strong style="color: #4a86e8;">ICAIF</strong>, etc.</li>
+                <li>Applications: Forecasting, Forecasting+Optimization/Decision, Anomaly Detection, Anomaly Detection+Root-cause/Insight Analysis, Classification, Imputation, etc., in Cloud Computing/AIOps, Energy/Power System, Weather/Earth System, E-Commerce/BI, Healthcare/BCI, Finance, etc., related to Sequential Data (Time Series, Spatio-Temporal, Event, etc.).</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[LLM and Foundation Model for Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong> (including "Time-XXX" series papers)</p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">ACL'25</strong>] Time-MQA: Time Series Multi-Task Question Answering with Context Enhancement, <strong style="color: #4a86e8;">ACL 2025</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: red;">ICLR'25</strong>] Time-MoE: Billion-Scale Time Series Foundation Models with Mixture of Experts, <strong style="color: red;">ICLR 2025</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>] (<strong style="color: red;">ICLR Spotlight, Top 5%</strong>)</li>
+                <li>[<strong style="color: red;">ICML'25</strong>] Time-VLM: Exploring Multimodal Vision-Language Models for Augmented Time Series Forecasting, <strong style="color: red;">ICML 2025</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: red;">ICLR'24</strong>] Time-LLM: Time Series Forecasting by Reprogramming Large Language Models, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'24</strong>] Time-MMD: A New Multi-Domain Multimodal Dataset for Time Series Analysis, <strong style="color: red;">NeurIPS 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'24</strong>] Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting, <strong style="color: red;">NeurIPS 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'25</strong>] Multi-Scale Finetuning for Encoder-based Time Series Foundation Models, <strong style="color: red;">NeurIPS 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'26</strong>] OccamVTS: Distilling Vision Models to 1% Parameters for Time Series Forecasting, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] Time-RA: Towards Time Series Reasoning for Anomaly with LLM Feedback, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] From Images to Signals: Are Large Vision Models Useful for Time Series Analysis? arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] TimeOmni-1: Incentivizing Complex Reasoning with Time Series in Large Language Models, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+            </ul>
+            <p><strong>Survey & Position & Tutorial & Keynote:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">ICML'24</strong>] Position: What Can Large Language Models Tell Us about Time Series Analysis, <strong style="color: red;">ICML 2024</strong>. [<a href="#" target="_blank">paper</a>] (Position Paper)</li>
+                <li>[<strong style="color: #4a86e8;">KDD'24</strong>] Foundation Models for Time Series Analysis: A Tutorial and Survey, <strong style="color: #4a86e8;">KDD 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">website</a>] (Survey & Tutorial)</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">paper</a>] (Survey & Tutorial)</li>
+                <li>[<strong style="color: red;">NeurIPS'24</strong>] LLM and Foundation Model for Time Series Analysis, <strong style="color: red;">NeurIPS 2024</strong> Workshop on Time Series. [<a href="#" target="_blank">Website</a>] [<a href="#" target="_blank">slides</a>] (Keynote Talk)</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'25</strong>] AI for Time Series Analysis: from Transformer to LLM and Foundation Models, <strong style="color: #4a86e8;">AAAI 2025</strong> Workshop on Time Series. [<a href="#" target="_blank">Website</a>] (Keynote Talk)</li>
+                <li>[arXiv'23] Large Models for Time Series and Spatio-Temporal Data: A Survey and Outlook, arXiv 2023. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">repo</a>]</li>
+                <li>[arXiv'25] Position: Empowering Time Series Reasoning with Multimodal LLMs, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] How Can Time Series Analysis Benefit From Multiple Modalities? A Survey and Outlook, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] Empowering Time Series Analysis with Synthetic Data: A Survey and Outlook in the Era of Foundation Models, arXiv 2025. [<a href="#" target="_blank">paper</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[SSL and Transformer Model for Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong> (including "XXXformer" series papers)</p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">ICML'22</strong>] FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting, <strong style="color: red;">ICML 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>] (citation: 2k+)</li>
+                <li>[<strong style="color: red;">ICLR'24</strong>] CARD: Channel Aligned Robust Blend Transformer for Time Series Forecasting, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">ICLR'24</strong>] Pathformer: Multi-scale Transformers with Adaptive Pathways for Time Series Forecasting, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">ICLR'24</strong>] Explaining Time Series via Contrastive and Locally Sparse Perturbations, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'22</strong>] Learning to Rotate: Quaternion Transformer for Complicated Periodical Time Series Forecasting, <strong style="color: #4a86e8;">KDD 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'23</strong>] AirFormer: Predicting Nationwide Air Quality in China with Transformers, <strong style="color: #4a86e8;">AAAI 2023</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'24</strong>] HiMTM: Hierarchical Multi-Scale Masked Time Series Modeling with Self-Distillation for Long-Term Forecasting, <strong style="color: #4a86e8;">CIKM 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KBS'24</strong>] Rethinking Self-Supervised Learning for Time Series Forecasting: A Temporal Perspective, <strong style="color: #4a86e8;">KBS 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] FRT: Flow-based Reconcile Transformer for Hierarchical Time Series, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">paper</a>]</li>
+            </ul>
+            <p><strong>Survey & Keynote:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">IJCAI'23</strong>] Transformers in Time Series: A Survey, <strong style="color: #4a86e8;">IJCAI 2023</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">repo</a>] <strong style="color: red;">Selected by Paper Digest into Most Influential IJCAI Papers (Version: 2023-09), Rank 1st (1/700+ IJCAI papers)</strong>, (citation: 1k+)</li>
+                <li>[<strong style="color: red;">TPAMI'24</strong>] Self-Supervised Learning for Time Series Analysis: Taxonomy, Progress, and Prospects, <strong style="color: red;">IEEE TPAMI 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">repo</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'22</strong>] Customized Transformers for Time Series Forecasting, <strong style="color: #4a86e8;">CIKM 2022</strong> Workshop on Time Series. [<a href="#" target="_blank">Website</a>] [<a href="#" target="_blank">Slides</a>] (Keynote Talk)</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[GNN for Time Series & Spatio-Temporal Data]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">TPAMI'25</strong>] Towards Expressive Spectral-Temporal Graph Neural Networks for Time Series Forecasting, <strong style="color: red;">IEEE TPAMI</strong>, 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'24</strong>] Heterogeneity-Informed Meta-Parameter Learning for Spatiotemporal Time Series Forecasting, <strong style="color: #4a86e8;">KDD 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+            </ul>
+            <p><strong>Survey:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">TPAMI'24</strong>] A Survey on Graph Neural Networks for Time Series: Forecasting, Classification, Imputation, and Anomaly Detection, <strong style="color: red;">IEEE TPAMI 2024</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">Website</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[SP (Fourier/Wavelet/EMD) for Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">NeurIPS'22</strong>] FiLM: Frequency improved Legendre Memory Model for Long-term Time Series Forecasting, <strong style="color: red;">NeurIPS 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>] (<strong style="color: red;">NeurIPS Oral, Top 2%</strong>)</li>
+                <li>[<strong style="color: red;">ICML'22</strong>] FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting, <strong style="color: red;">ICML 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">SIGMOD'21</strong>] RobustPeriod: Time-Frequency Mining for Robust Multiple Periodicity Detection, <strong style="color: #4a86e8;">SIGMOD 2021</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'22</strong>] TFAD: A Decomposition Time Series Anomaly Detection Architecture with Time-Frequency Analysis, <strong style="color: #4a86e8;">CIKM 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'23</strong>] Robust Dominant Periodicity Detection for Time Series with Missing Data, <strong style="color: #4a86e8;">ICASSP 2023</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICDE'24</strong>] Learning Multi-Pattern Normalities in the Frequency Domain for Efficient Time Series Anomaly Detection, <strong style="color: #4a86e8;">ICDE 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] EMD-Period: Detecting Multi-periodicity in Industrial Cloud Clusters via Time-Frequency Decomposition, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'25] Multi-Order Wavelet Derivative Transform for Deep Time Series Forecasting, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Tutorial and Survey:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] A Survey on Deep Learning based Time Series Analysis with Frequency Transformation, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">arXiv</a>] (Survey & Tutorial)</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Diffusion Model for Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong> (including "DiffXXX" series papers)</p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">TPWRS'24</strong>] DiffLoad: Uncertainty Quantification in Load Forecasting with the Diffusion Model, <strong style="color: #4a86e8;">IEEE TPWRS 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">SIGSPATIAL'24</strong>] DiffSTG: Probabilistic Spatio-Temporal Graph Forecasting with Denoising Diffusion Models, <strong style="color: #4a86e8;">SIGSPATIAL 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ECML-PKDD'25</strong>] Cross-Domain Conditional Diffusion Models for Time Series Imputation, <strong style="color: #4a86e8;">ECML-PKDD 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] Causal Time Series Generation via Diffusion Models, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Survey:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">CSUR'25</strong>] A Survey on Diffusion Models for Time Series and Spatio-Temporal Data, <strong style="color: #4a86e8;">ACM Computing Surveys 2025</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">Website</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Robust Model for Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong> (including "RobustXXX" series papers)</p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">ICLR'24</strong>] RobustTSF: Towards Theory and Design of Robust Time Series Forecasting with Anomalies, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">VLDB'24</strong>] Weakly Guided Adaptation for Robust Time Series Forecasting, <strong style="color: #4a86e8;">VLDB 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TKDE'24</strong>] LogoRA: Local-Global Representation Alignment for Robust Time Series Classification, <strong style="color: #4a86e8;">IEEE TKDE 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'24</strong>] RobustTSVar: A Robust Time Series Variance Estimation Algorithm, <strong style="color: #4a86e8;">ICASSP 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'20</strong>] On Robust Variance Filtering and Change of Variance Detection, <strong style="color: #4a86e8;">ICASSP 2020</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDDW'20</strong>] RobustTAD: Robust Time Series Anomaly Detection via Decomposition and Convolutional Neural Networks, <strong style="color: #4a86e8;">KDDW 2020</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'22</strong>] Robust Time Series Dissimilarity Measure for Outlier Detection and Periodicity Detection, <strong style="color: #4a86e8;">CIKM 2022</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">IJCAI'19</strong>] RobustTrend: A Huber Loss with a Combined First and Second Order Difference Regularization for Time Series Trend Filtering, <strong style="color: #4a86e8;">IJCAI 2019</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'21</strong>] A Robust and Efficient Multi-Scale Seasonal-Trend Decomposition, <strong style="color: #4a86e8;">ICASSP 2021</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'20</strong>] Fast RobustSTL: Efficient and Robust Seasonal-Trend Decomposition for Time Series with Complex Patterns, <strong style="color: #4a86e8;">KDD 2020</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'19</strong>] RobustSTL: A Robust Seasonal-Trend Decomposition Algorithm for Long Time Series, <strong style="color: #4a86e8;">AAAI 2019</strong>. [<a href="#" target="_blank">paper</a>]</li>
+            </ul>
+            <p><strong>Tutorial and Survey:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">ICDM'23</strong>] Robust Time Series Analysis and Applications: An Interdisciplinary Approach, <strong style="color: #4a86e8;">ICDM 2023</strong>. [<a href="#" target="_blank">website</a>] [<a href="#" target="_blank">slides</a>] (Tutorial)</li>
+                <li>[<strong style="color: #4a86e8;">KDD'22</strong>] Robust Time Series Analysis and Applications: An Industrial Perspective, <strong style="color: #4a86e8;">KDD 2022</strong>. [<a href="#" target="_blank">website</a>] [<a href="#" target="_blank">slides</a>] (Tutorial)</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Other Model for Time Series]</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">KDD'26</strong>] How to Train Your Mamba for Time Series Forecasting, <strong style="color: #4a86e8;">KDD 2026</strong>.</li>
+                <li>[<strong style="color: red;">TPAMI'25</strong>] Time Evidence Fusion Network: Multi-source View in Long-Term Time Series Forecasting, <strong style="color: red;">IEEE TPAMI</strong>, 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'25</strong>] ShapeX: Shapelet-Driven Post Hoc Explanations for Time Series Classification Models, <strong style="color: red;">NeurIPS 2025</strong>.</li>
+                <li>[<strong style="color: red;">NeurIPS'24</strong>] Attractor Memory for Long-Term Time Series Forecasting: A Chaos Perspective, <strong style="color: red;">NeurIPS 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">ICLR'24</strong>] EasyTPP: Towards Open Benchmarking Temporal Point Processes, <strong style="color: red;">ICLR 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'25</strong>] Unlocking the Power of LSTM for Long Term Time Series Forecasting, <strong style="color: #4a86e8;">AAAI 2025</strong> [<a href="#" target="_blank">paper</a>] (<strong style="color: red;">AAAI Oral, Top 5%</strong>)</li>
+                <li>[<strong style="color: #4a86e8;">IJCAI'24</strong>] Predicting Carpark Availability in Singapore with Cross-Domain Data: A New Dataset and A Data-Driven Approach, <strong style="color: #4a86e8;">IJCAI 2024</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'24] PDETime: Rethinking Long-Term Multivariate Time Series Forecasting from the perspective of partial differential equations, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'24] Toward Physics-guided Time Series Embedding, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] From Entanglement to Alignment: Representation Space Decomposition for Unsupervised Time Series Domain Adaptation, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Survey and Toolkit:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">IJCAI'21</strong>] Time Series Data Augmentation for Deep Learning: A Survey, <strong style="color: #4a86e8;">IJCAI 2021</strong>. [<a href="#" target="_blank">arXiv</a>] <strong style="color: red;">Selected by Paper Digest into Most Influential IJCAI Papers (Version: 2022-02), Rank 1st (1/600+ IJCAI'21 papers)</strong>. (citation: ~1k)</li>
+                <li>[arXiv'24] Time Series Analysis for Education: Methods, Applications, and Future Directions, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] PyPOTS: A Python Toolkit for Machine Learning on Partially-Observed Time Series, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Forecasting under Concept/Distribution Drift]</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">NeurIPS'23</strong>] OneNet: Enhancing Time Series Forecasting Models under Concept Drift by Online Ensembling, <strong style="color: red;">NeurIPS 2023</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'22</strong>] Towards Out-of-Distribution Sequential Event Prediction: A Causal Treatment, <strong style="color: red;">NeurIPS 2022</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">IJCAI'25</strong>] Learning to Extrapolate and Adjust: Two-Stage Meta-Learning for Concept Drift in Online Time Series Forecasting, <strong style="color: #4a86e8;">IJCAI 2025</strong>.</li>
+                <li>[arXiv'24] Evolving Multi-Scale Normalization for Time Series Forecasting under Distribution Shifts, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Anomaly Detection in Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] Noise-Resilient Point-wise Anomaly Detection in Time Series Using Weak Segment Labels, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">VLDB'25</strong>] Noise Matters: Cross Contrastive Learning for Flink Anomaly Detection, <strong style="color: #4a86e8;">VLDB 2025</strong>.</li>
+                <li>[<strong style="color: #4a86e8;">TKDE'25</strong>] DACAD: Domain Adaptation Contrastive Learning for Anomaly Detection in Multivariate Time Series, <strong style="color: #4a86e8;">TKDE 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">WWW'24</strong>] LARA: A Light and Anti-overfitting Retraining Approach for Unsupervised Time Series Anomaly Detection, <strong style="color: #4a86e8;">WWW 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">SDM'24</strong>] Stable Synthetic Control with Anomaly Detection for Causal Inference, <strong style="color: #4a86e8;">SDM 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'24</strong>] Advancing Multivariate Time Series Anomaly Detection: A Comprehensive Benchmark with Real-World Data from Alibaba Cloud, <strong style="color: #4a86e8;">CIKM 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'24</strong>] Skip-Step Contrastive Predictive Coding for Time Series Anomaly Detection, <strong style="color: #4a86e8;">ICASSP 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'23</strong>] DCdetector: Dual Attention Contrastive Representation Learning for Time Series Anomaly Detection, <strong style="color: #4a86e8;">KDD 2023</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TKDE'22</strong>] Learning Robust Deep State Space for Unsupervised Anomaly Detection in Contaminated Time-Series, <strong style="color: #4a86e8;">IEEE TKDE 2022</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'23</strong>] ADGym: Design Choices for Deep Anomaly Detection, <strong style="color: red;">NeurIPS 2023</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[arXiv'24] GraphSubDetector: Time Series Subsequence Anomaly Detection via Density-Aware Adaptive Graph Neural Network, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'24] Abnormality Forecasting: Time Series Anomaly Prediction via Future Context Modeling, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] CaPulse: Detecting Anomalies by Tuning in to the Causal Rhythms of Time Series, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[Imputation in Time Series]</h3>
+        <div class="mt-3">
+            <p><strong>Algorithm & Benchmark & Dataset & Code:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">NeurIPS'24</strong>] Task-oriented Time Series Imputation Evaluation via Generalized Representers, <strong style="color: red;">NeurIPS 2024</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: red;">ICML'24</strong>] BayOTIDE: Bayesian Online Multivariate Time series Imputation with functional decomposition, <strong style="color: red;">ICML 2024</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>] (<strong style="color: red;">ICML Spotlight, Top 3.5%</strong>)</li>
+                <li>[arXiv'24] TSI-Bench: Benchmarking Time Series Imputation, arXiv 2024. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+            </ul>
+            <p><strong>Survey:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">IJCAI'25</strong>] Deep learning for multivariate time series imputation: A survey, <strong style="color: #4a86e8;">IJCAI 2025</strong>. [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">[AI4TS Related Applications] (Weather, Energy, Cloud, Finance, E-Commerce, etc.)</h3>
+        <div class="mt-3">
+            <p><strong>Weather/Earth System:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: red;">ICML'25</strong>] OneForecast: A Universal Framework for Global and Regional Weather Forecasting, <strong style="color: red;">ICML 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25</strong>] Physics-Guided Learning of Meteorological Dynamics for Weather Downscaling and Forecasting, <strong style="color: #4a86e8;">KDD 2025</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'26</strong>] NeuralOM: Neural Ocean Model for Subseasonal-to-Seasonal Simulation, <strong style="color: #4a86e8;">AAAI 2026</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] Turb-L1: Achieving Long-term Turbulence Tracing By Tackling Spectral Bias, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] Ocean-E2E: Hybrid Physics-Based and Data-Driven Global Forecasting of Extreme Marine Heatwaves with End-to-End Neural Assimilation, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] Advanced Long-Term Earth System Forecasting by Learning the Small-Scale Nature, arXiv 2025. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[arXiv'25] VISION: Prompting Ocean Vertical Velocity Reconstruction from Incomplete Observations, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] Differential-Integral Neural Operator for Long-Term Turbulence Forecasting, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Energy & Power System:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">TSG'24</strong>] Deciding When to Use A Personalized Model for Load Forecasting, <strong style="color: #4a86e8;">IEEE TSG 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TSG'24</strong>] Federated Domain Separation for Distributed Forecasting of Non-IID Household Loads, <strong style="color: #4a86e8;">IEEE TSG 2024</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">PIEEE'23</strong>] A Cyber-Physical-Social Perspective on Future Smart Distribution Systems, <strong style="color: #4a86e8;">Proceedings of the IEEE (PIEEE)</strong>, 2023. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'23</strong>] eForecaster: Unifying Electricity Forecasting with Robust, Flexible, and Explainable Machine Learning Algorithms, <strong style="color: #4a86e8;">AAAI 2023</strong>. [<a href="#" target="_blank">paper</a>] (<strong style="color: red;">AAAI/IAAI 2023 Innovative Application Award</strong>)</li>
+                <li>[<strong style="color: #4a86e8;">TSG'23</strong>] Personalized Federated DARTS for Electricity Load Forecasting of Individual Buildings, <strong style="color: #4a86e8;">IEEE TSG 2023</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TSG'23</strong>] Improving Load Forecasting Performance via Sample Reweighting, <strong style="color: #4a86e8;">IEEE TSG 2023</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TSG'23</strong>] A Global Modeling Approach for Load Forecasting in Distribution Networks, <strong style="color: #4a86e8;">IEEE TSG 2023</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">paper</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AI Magazine'23</strong>] Energy Forecasting with Robust, Flexible, and Explainable Machine Learning Algorithms, <strong style="color: #4a86e8;">AAAI AI Magazine</strong>, 2023. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'23</strong>] SaDI: A Self-Adaptive Decomposed Interpretable Framework for Electricity Load Forecasting under Extreme Events, <strong style="color: #4a86e8;">ICASSP 2023</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">iEnergy'22</strong>] Adaptive Probabilistic Load Forecasting for Individual Buildings, <strong style="color: #4a86e8;">iEnergy</strong>, 2022. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">TPWRS'22</strong>] Robust Load Forecasting towards Adversarial Attacks via Bayesian Learning, <strong style="color: #4a86e8;">IEEE TPWRS 2022</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[arXiv'24] Benchmarks and Custom Package for Energy Forecasting, arXiv 2024. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[arXiv'25] PriceFM: Foundation Model for Probabilistic Electricity Price Forecasting, arXiv 2025. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Cloud Computing & AIOps:</strong> (including "XxxScaler" and "XxxRCA" series papers)</p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">VLDB'25</strong>] RCRank: Multimodal Ranking of Root Causes of Slow Queries in Cloud Database Systems, <strong style="color: #4a86e8;">VLDB 2025</strong>.</li>
+                <li>[<strong style="color: #4a86e8;">KDD'24</strong>] Cluster-Wide Task Slowdown Detection in Cloud Systems, <strong style="color: #4a86e8;">KDD 2024</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'24</strong>] LogParser-LLM: Advancing Efficient Log Parsing with Large Language Models, <strong style="color: #4a86e8;">KDD 2024</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'24</strong>] RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models, <strong style="color: #4a86e8;">CIKM 2024</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+                <li>[<strong style="color: #4a86e8;">VLDB'23</strong>] MagicScaler: Uncertainty-aware, Predictive Autoscaling, <strong style="color: #4a86e8;">VLDB 2023</strong>. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: red;">NeurIPS'23</strong>] ADGym: Design Choices for Deep Anomaly Detection, <strong style="color: red;">NeurIPS 2023</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">code</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'23</strong>] AHPA: Adaptive Horizontal Pod Autoscaling Systems on Alibaba Cloud Container Service for Kubernetes, <strong style="color: #4a86e8;">AAAI 2023</strong>. [<a href="#" target="_blank">arXiv</a>] (<strong style="color: red;">AAAI/IAAI 2023 Innovative Application Award</strong>)</li>
+                <li>[<strong style="color: #4a86e8;">ICDE'22</strong>] RobustScaler: QoS-Aware Autoscaling for Complex Workloads, <strong style="color: #4a86e8;">ICDE 2022</strong>. [<a href="#" target="_blank">paper</a>] Media Coverage: [<a href="#" target="_blank">Mo4Tech</a>] [<a href="#" target="_blank">Alicloudnative</a>] [<a href="#" target="_blank">Zhihu</a>] [<a href="#" target="_blank">1024sou</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICASSP'22</strong>] NetRCA: An Effective Network Fault Cause Localization Algorithm, <strong style="color: #4a86e8;">ICASSP 2022</strong>. [<a href="#" target="_blank">arXiv</a>] [<a href="#" target="_blank">link</a>] (<strong style="color: red;">ICASSP'22 AIOps Challenge, First Place (1/382)</strong>)</li>
+                <li>[<strong style="color: #4a86e8;">CIKM'21</strong>] CloudRCA: A Root Cause Analysis Framework for Cloud Computing Platforms, <strong style="color: #4a86e8;">CIKM 2021</strong>. [<a href="#" target="_blank">arXiv</a>]</li>
+            </ul>
+            <p><strong>Finance & E-Commerce:</strong></p>
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">JPM'24</strong>] Large Language Models for Financial and Investment Management: Models, Opportunities and Challenges, <strong style="color: #4a86e8;">JPM</strong>, 2024. [<a href="#" target="_blank">paper</a>]</li>
+                <li>[<strong style="color: #4a86e8;">JPM'24</strong>] Large Language Models for Financial and Investment Management: Applications and Benchmarks, <strong style="color: #4a86e8;">JPM</strong>, 2024. [<a href="#" target="_blank">paper</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">Tutorial on AI for Time Series Analysis (@ KDD, AAAI, MM, ICDM)</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li>[<strong style="color: #4a86e8;">AAAI'26 Tutorial</strong>] Yuxuan Liang, Qingxiang Liu, Ming Jin, Xu Liu, Yushan Jian, Dongjin Song, Shirui Pan, Qingsong Wen, "Foundation Models for Time Series Analysis: A Tutorial," Tutorial at the 40th <strong style="color: #4a86e8;">AAAI</strong> Conference on Artificial Intelligence (<strong style="color: #4a86e8;">AAAI 2026</strong>), Singapore, Jan. 2026.</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25 Tutorial</strong>] "Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey," Tutorial at the 31st ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (<strong style="color: #4a86e8;">KDD 2025</strong>), Toronto, Canada, Aug. 2025.</li>
+                <li>[<strong style="color: #4a86e8;">KDD'25 Tutorial</strong>] "Deep Learning in the Frequency Domain: Advances, Challenges, and Applications for Time Series Analysis," Tutorial at the 31st ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (<strong style="color: #4a86e8;">KDD 2025</strong>), Toronto, Canada, Aug. 2025.</li>
+                <li>[<strong style="color: #4a86e8;">MM'25 Tutorial</strong>] "Multimodal Learning for Spatio-Temporal Data Mining," Tutorial at the 33rd ACM International Conference on Multimedia (<strong style="color: #4a86e8;">MM 2025</strong>), Dublin, Ireland, Oct. 2025. [<a href="#" target="_blank">Website</a>]</li>
+                <li>[<strong style="color: #4a86e8;">AAAI'25 Tutorial</strong>] "Foundation Models for Time Series Analysis: A Tutorial," Tutorial at the 39th <strong style="color: #4a86e8;">AAAI</strong> Conference on Artificial Intelligence (<strong style="color: #4a86e8;">AAAI 2025</strong>), Philadelphia, PA, USA, Feb. 2025. [<a href="#" target="_blank">Website</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'24 Tutorial</strong>] "Foundation Models for Time Series Analysis," Tutorial at the 30th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (<strong style="color: #4a86e8;">KDD 2024</strong>), Barcelona, Spain, Aug. 2024. [<a href="#" target="_blank">Website</a>]</li>
+                <li>[<strong style="color: #4a86e8;">ICDM'23 Tutorial</strong>] "Robust Time Series Analysis and Applications: An Interdisciplinary Approach", Tutorial at 23rd IEEE International Conference on Data Mining (<strong style="color: #4a86e8;">ICDM 2023</strong>), Shanghai, China, Dec., 2023. [<a href="#" target="_blank">Website</a>] [<a href="#" target="_blank">Slides</a>]</li>
+                <li>[<strong style="color: #4a86e8;">KDD'22 Tutorial</strong>] "Robust Time Series Analysis and Applications: An Industrial Perspective," Tutorial at the 28th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (<strong style="color: #4a86e8;">KDD 2022</strong>), Washington DC, USA, Aug., 2022 (70+ onsite audiences). [<a href="#" target="_blank">Website</a>] [<a href="#" target="_blank">Slides</a>]</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">Workshop on AI for Time Series Analysis/Spatio-Temporal Data (@ KDD, AAAI, IJCAI, WWW, ICDM, SDM, ICAIF)</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li>KDD Workshop on Mining and Learning from Time Series (<a href="https://kdd-milets.github.io/milets2023/" target="_blank">KDD'23-MiLeTS</a>, <a href="https://kdd-milets.github.io/milets2024/" target="_blank">KDD'24-MiLeTS</a>, <a href="https://kdd-milets.github.io/milets2025/" target="_blank">KDD'25-MiLeTS</a>)</li>
+                <li>AAAI Workshop on AI for Time Series Analysis: Theory, Algorithms, and Applications (<a href="https://ai4ts.github.io/aaai2024" target="_blank">AAAI'24-AI4TS</a>, <a href="https://ai4ts.github.io/aaai2025" target="_blank">AAAI'25-AI4TS</a>, <a href="https://ai4ts.github.io/aaai2026" target="_blank">AAAI'26-AI4TS</a>)</li>
+                <li>IJCAI Workshop on AI for Time Series Analysis: Theory, Algorithms, and Applications (<a href="https://ai4ts.github.io/ijcai2023" target="_blank">IJCAI'23-AI4TS</a>, <a href="https://ai4ts.github.io/ijcai2024" target="_blank">IJCAI'24-AI4TS</a>, <a href="https://ai4ts.github.io/ijcai2025" target="_blank">IJCAI'25-AI4TS</a>)</li>
+                <li>WWW Workshop on Spatio-Temporal Data Mining from the Web (<a href="https://webst2025.netlify.app/" target="_blank">WWW'25-WebST</a>)</li>
+                <li>WWW Workshop on AI for Web-Centric Time Series Analysis (AI4TS): Theory, Algorithms, and Applications (<a href="https://ai4ts.github.io/www2025" target="_blank">WWW'25-AI4TS</a>)</li>
+                <li>ICAIF 2025 Workshop on Rethinking Financial Time-Series: Foundations, Frontiers, and Future Directions (<a href="https://icaif25-rfts.github.io/" target="_blank">link</a>)</li>
+                <li>ICAIF 2024 Workshop on Foundation Models for Time Series: Exploring New Frontiers (<a href="https://sites.google.com/view/fm4ts/home" target="_blank">ICAIF'24-FM4TS</a>)</li>
+                <li>SDM Workshop on AI for Time Series Analysis: Theory, Algorithms, and Applications (<a href="https://ai4ts.github.io/sdm2024" target="_blank">SDM'24-AI4TS</a>, <a href="https://ai4ts.github.io/sdm2025" target="_blank">SDM'25-AI4TS</a>)</li>
+                <li>ICDM Workshop on AI for Time Series Analysis: Theory, Algorithms, and Applications (<a href="https://ai4ts.github.io/icdm2023" target="_blank">ICDM'23-AI4TS</a>)</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">Github Repo on AI for Time Series</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li><strong>Large (Language) Models for Time Series & Spatio-Temporal Data (LM4TS & LM4STD)</strong> [<a href="https://github.com/qingsongedu/Awesome-TimeSeries-SpatioTemporal-LM-LLM" target="_blank">GitHub link</a>] (~1.2k stars)<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Large (Language) Models for Time Series and Spatio-Temporal Data.</li>
+                <li><strong>Self-Supervised Learning for Time Series (SSL4TS)</strong> [<a href="https://github.com/qingsongedu/Awesome-SSL4TS" target="_blank">GitHub link</a>] ([<strong style="color: red;">TPAMI</strong>'24])<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Self-Supervised Learning for Time Series.</li>
+                <li><strong>Graph Neural Networks for Time Series (GNN4TS)</strong> [<a href="https://github.com/KimMeen/Awesome-GNN4TS" target="_blank">GitHub link</a>] ([<strong style="color: red;">TPAMI</strong>'24])<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Graph Neural Networks for Time Series.</li>
+                <li><strong>Transformers for Time Series (Trans4TS)</strong> [<a href="https://github.com/qingsongedu/time-series-transformers-review" target="_blank">GitHub link</a>] (~3k+ stars) ([<strong style="color: #4a86e8;">IJCAI</strong>'23])<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Transformers for Time Series.</li>
+                <li><strong>Diffusion Models for Time Series & Spatio-Temporal Data (Diff4TS & Diff4STD)</strong> [<a href="https://github.com/yyysjz1997/Awesome-TimeSeries-SpatioTemporal-Diffusion-Model" target="_blank">GitHub link</a>]<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Diffusion Models for Time Series & Spatio-Temporal Data.</li>
+                <li><strong>Imputation for Time Series (TSI-Bench)</strong> [<a href="https://github.com/WenjieDu/Awesome_Imputation" target="_blank">GitHub link</a>]<br>
+                A professionally curated list of awesome resources (paper, code, data, etc.) on Imputation for Time Series.</li>
+                <li><strong>Papers, Tutorials, and Surveys on AI for Time Series (AI4TS)</strong> [<a href="https://github.com/qingsongedu/awesome-AI-for-time-series-papers" target="_blank">GitHub link</a>] (~1.5k stars)<br>
+                A professionally curated list of Papers, Tutorials, and Surveys on AI for Time Series in top AI conferences and journals.</li>
+            </ul>
+        </div>
+
+        <h3 class="pt-4">Others</h3>
+        <div class="mt-3">
+            <ul style="font-size: 15px;">
+                <li>IEEE CIS Task Force on AI for Time Series and Spatio-Temporal Data [<a href="https://cis.taskforce.ieee.org/ai4tst/" target="_blank">Link</a>]</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    </div>
+    <!-- Table of Contents -->
+<div id="toc-sidebar" class="toc-sidebar">
+    <div class="toc-header">
+        <strong>Contents</strong>
+    </div>
+    <nav id="toc-nav" class="toc-nav">
+        <!-- TOC items will be generated by JavaScript -->
+    </nav>
+</div>
+
+<script>
+(function() {
+    // Only show TOC on specific pages
+    const tocPages = ['Publications', 'Keynote & Tutorial', 'AI for Time Series', 'AI for Education', 'LLM & AI Agent', 'Experience', 'Services & Awards'];
+    const currentPage = 'AI for Time Series';
+    
+    if (!currentPage || !tocPages.includes(currentPage)) {
+        return;
+    }
+    
+    // Find all headings (h2, h3, h4)
+    const headings = document.querySelectorAll('h2, h3, h4');
+    const tocNav = document.getElementById('toc-nav');
+    const tocSidebar = document.getElementById('toc-sidebar');
+    
+    if (headings.length === 0 || !tocNav || !tocSidebar) {
+        return;
+    }
+    
+    // Show the sidebar
+    tocSidebar.classList.add('show');
+    
+    // Generate TOC
+    headings.forEach((heading, index) => {
+        // Skip if heading doesn't have text content
+        if (!heading.textContent.trim()) {
+            return;
+        }
+        
+        // Create ID for heading if it doesn't exist
+        let id = heading.id;
+        if (!id) {
+            id = 'toc-' + index + '-' + heading.textContent.trim().toLowerCase().replace(/[^a-z0-9\u4e00-\u9fa5]+/g, '-');
+            heading.id = id;
+        }
+        
+        // Create TOC item
+        const tocItem = document.createElement('a');
+        tocItem.href = '#' + id;
+        tocItem.className = 'toc-item toc-' + heading.tagName.toLowerCase();
+        tocItem.textContent = heading.textContent.trim();
+        tocItem.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.getElementById(id);
+            if (target) {
+                const offset = 80; // Account for fixed navbar
+                const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+        
+        tocNav.appendChild(tocItem);
+    });
+    
+    // Highlight active section on scroll
+    let currentActive = null;
+    function updateActiveSection() {
+        const scrollPos = window.scrollY + 100;
+        let activeId = null;
+        
+        headings.forEach((heading) => {
+            const top = heading.offsetTop;
+            if (scrollPos >= top) {
+                activeId = heading.id;
+            }
+        });
+        
+        if (activeId && activeId !== currentActive) {
+            currentActive = activeId;
+            document.querySelectorAll('.toc-item').forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + activeId) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    }
+    
+    window.addEventListener('scroll', updateActiveSection);
+    updateActiveSection();
+})();
+</script>
+
+    <footer class="footer">
+    <div class="container">
+        <!-- Site Analytics -->
+        <div class="row mb-3">
+            <div class="col-12">
+                <div class="text-center">
+                    <div class="analytics-container">
+                        <div class="clustrmap-container">
+                            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Uvq6cfvShluqUmf4KDhLMAeCNSkQS2WGYYFPTKcjP40&cl=ffffff&w=300&h=200"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Original Footer Content -->
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="text-muted">
+                    <i>Last updated: Dec 2025</i>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-right text-muted">
+                    Copyright © 2025 <a href="https://sites.google.com/site/qingsongwen8/" target="_blank">Qingsong Wen</a>. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
+    <script src="/assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{% assign item = include.item %}
+<div class="mb-3" style="font-size: 15px;">
+    <div>
+        {% if item.pinned %}<i class="fas fa-thumbtack text-primary mr-2" title="Pinned"></i>{% endif %}
+        <strong>{{ item.title }}</strong>
+    </div>
+    <div class="mb-1">{% include widgets/author_list.html authors=item.authors %}</div>
+    <div class="mb-1">
+        {{item.pub_pre}}
+        {% if item.pub %}
+            {% assign pub_text = item.pub | strip %}
+            {% assign pub_parts = pub_text | split: ',' %}
+            {% if pub_parts.size > 0 %}
+                <strong style="color: red;">{{ pub_parts[0] | strip }}</strong>
+                {% if pub_parts.size > 1 %}
+                    {% for part in pub_parts offset:1 %}
+                        , {{ part | strip }}
+                    {% endfor %}
+                {% endif %}
+            {% else %}
+                <strong style="color: red;">{{ pub_text }}</strong>
+            {% endif %}
+        {% endif %}
+        {{ item.pub_post }} {{ item.pub_last }}
+    </div>
+    
+    <div class="mb-1">
+        {% for link in item.links %}
+        {% if link[1].url %}
+        <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">[{{ link[0] }}]</a>
+        {% elsif link[1] contains 'img.shields.io' %}
+        <img src="{{ link[1] }}" alt="{{ link[0] }}" style="height: 20px; vertical-align: middle;">
+        {% else %}
+        <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
+        {% endif %}
+        {% endfor %}
+        {% if item.citations %}
+        {% include widgets/citation_badge.html citation_count=item.citations %}
+        {% endif %}
+    </div>
+</div>

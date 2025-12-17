@@ -1,0 +1,17 @@
+pages:
+- name: Home
+  url: /
+- name: Publications
+  url: /publications
+- name: Keynote & Tutorial
+  url: /keynote-tutorial
+- name: AI for Time Series
+  url: /ai-for-time-series
+- name: AI for Education
+  url: /ai-for-education
+- name: LLM & AI Agent
+  url: /llm-ai-agent
+- name: Experience
+  url: /experience
+- name: Services & Awards
+  url: /service

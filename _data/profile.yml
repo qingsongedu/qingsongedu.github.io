@@ -1,0 +1,42 @@
+primary_name: "Qingsong Wen, Ph.D. of Georgia Tech"
+secondary_name: ""
+navbar_name: "Qingsong Wen"
+
+positions:
+- name: '<strong style="color: red;">Head of AI & Chief Scientist</strong> @ Squirrel Ai Learning, <strong style="color: red;">PhD Supervisor</strong> @ University of Oxford'
+- name: '<strong style="color: red;">Chair</strong> of CIS Task Force on AI for Time Series and Spatio-Temporal Data @ IEEE'
+- name: '<strong style="color: red;">Vice Chair</strong> of AI for Education Section @ INNS'
+- name: '<strong style="color: red;">Forbes Top 100</strong> Most Influential Chinese Elites (福布斯中国全球最具影响力华人精英 Top 100)'
+
+email: "qingsongedu@gmail.com"
+# cv_link: link-to-your-cv-file
+gscholar: vjPJvwYAAAAJ
+# sscholar: ""
+github: qingsongedu
+# zhihu: zhongsiru
+# csdn: qq_45173404
+# twitter: qingsongedu
+# wechat_qrcode: /assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+linkedin: qingsong-wen-22814156
+# orcid: 0000-0003-4516-2524
+# researchgate: Siru_Zhong
+# dblp: 27/561
+
+short_bio: >-
+  <p style="margin-bottom: 0.9rem; color: #212529; text-align: justify;">
+    Qingsong Wen is currently the Head of AI & Chief Scientist at <a href="https://squirrelai.com/" target="_blank">Squirrel Ai Learning</a> (a top EdTech unicorn with 3,000+ learning centers across 1,500+ cities, serving tens of millions of students globally), and PhD Supervisor at University of Oxford. Before that, he worked at Alibaba, Qualcomm, Marvell, etc., and received his M.S. and Ph.D. degrees in Electrical and Computer Engineering from <a href="http://www.gatech.edu/" target="_blank">Georgia Institute of Technology</a>, USA.
+    His research interests include machine learning, data mining, and signal processing, especially <a href="/ai-for-time-series">AI for Time Series</a>, <a href="/ai-for-education">AI for Education</a>, <a href="/llm-ai-agent">LLM & AI Agent</a>. He has published over 150 top-ranked AI conference and journal papers, had multiple Oral/Spotlight Papers at NeurIPS, ICML, ICLR, ACL, AAAI, had multiple Most Influential Papers at IJCAI, received multiple IAAI Innovative Application Awards at AAAI, and won First Place of SP Grand Challenge at ICASSP.
+    Currently, he serves as Chair of <a href="https://cis.taskforce.ieee.org/ai4tst/" target="_blank">IEEE CIS Task Force on AI for Time Series and Spatio-Temporal Data</a>, and Vice Chair of <a href="https://neural.memberclicks.net/aie-section" target="_blank">INNS AI for Education Section</a>. He also regularly serves as Area Chair of the top conferences including NeurIPS, ICML, ICLR, KDD, IJCAI, ICASSP, etc, and Associate Editor for <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34" target="_blank">IEEE Transactions on Pattern Analysis and Machine Intelligence (IF=20.8)</a>.
+  </p>
+  <div style="margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid #e9ecef;">
+    <span style="font-weight: 600; color: #495057; font-size: 0.9rem; margin-right: 0.75rem;">R&D Interests:</span>
+    <a href="/ai-for-time-series" style="padding: 0.3rem 0.8rem; background-color: #e7f3ff; color: #0066cc; border-radius: 5px; margin-right: 0.5rem; display: inline-block; font-size: 0.9rem; text-decoration: none; transition: all 0.2s ease;">AI for Time Series</a>
+    <a href="/ai-for-education" style="padding: 0.3rem 0.8rem; background-color: #e7f3ff; color: #0066cc; border-radius: 5px; margin-right: 0.5rem; display: inline-block; font-size: 0.9rem; text-decoration: none; transition: all 0.2s ease;">AI for Education</a>
+    <a href="/llm-ai-agent" style="padding: 0.3rem 0.8rem; background-color: #e7f3ff; color: #0066cc; border-radius: 5px; display: inline-block; font-size: 0.9rem; text-decoration: none; transition: all 0.2s ease;">LLM & AI Agent</a>
+  </div>
+
+portrait_url: /assets/images/photos/portrait.jpg
+portrait_caption: >-
+  Qingsong Wen, Ph.D. of Georgia Tech
