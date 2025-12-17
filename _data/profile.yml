@@ -3,10 +3,10 @@ secondary_name: ""
 navbar_name: "Qingsong Wen"
 
 positions:
-- name: '<strong style="color: red;">Head of AI & Chief Scientist</strong> @ Squirrel Ai Learning, <strong style="color: red;">PhD Supervisor</strong> @ University of Oxford'
-- name: '<strong style="color: red;">Chair</strong> of CIS Task Force on AI for Time Series and Spatio-Temporal Data @ IEEE'
-- name: '<strong style="color: red;">Vice Chair</strong> of AI for Education Section @ INNS'
-- name: '<strong style="color: red;">Forbes Top 100</strong> Most Influential Chinese Elites (福布斯中国全球最具影响力华人精英 Top 100)'
+- name: '<strong>Head of AI & Chief Scientist</strong> @ Squirrel Ai Learning, <strong>PhD Supervisor</strong> @ University of Oxford'
+- name: '<strong>Chair</strong> of CIS Task Force on AI for Time Series and Spatio-Temporal Data @ IEEE'
+- name: '<strong>Vice Chair</strong> of AI for Education Section @ INNS'
+- name: '<strong>Forbes Top 100</strong> Most Influential Chinese Elites (福布斯中国全球最具影响力华人精英 Top 100)'
 
 email: "qingsongedu@gmail.com"
 # cv_link: link-to-your-cv-file

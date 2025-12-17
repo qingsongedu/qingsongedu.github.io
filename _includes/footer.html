@@ -1,17 +1,20 @@
 <footer class="footer">
     <div class="container">
-        <!-- Site Analytics -->
-        <div class="row mb-3">
-            <div class="col-12">
-                <div class="text-center">
-                    <div class="analytics-container">
-                        <div class="clustrmap-container">
-                            <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Uvq6cfvShluqUmf4KDhLMAeCNSkQS2WGYYFPTKcjP40&cl=ffffff&w=300&h=200"></script>
+        {% comment %}Only show the visitor map on the homepage{% endcomment %}
+        {% if page.url == "/" or page.url == "/index.html" %}
+            <!-- Site Analytics -->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="text-center">
+                        <div class="analytics-container">
+                            <div class="clustrmap-container">
+                                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Uvq6cfvShluqUmf4KDhLMAeCNSkQS2WGYYFPTKcjP40&cl=ffffff&w=300&h=200"></script>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        {% endif %}
         
         <!-- Original Footer Content -->
         <div class="row my-3">
